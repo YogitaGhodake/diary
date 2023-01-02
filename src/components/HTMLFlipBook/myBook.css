@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+/* .main {
+    margin-left: 180px;
+} */
+
+.demoPage{
+position: relative;
+}
+
+.tag{
+    position: absolute;
+    color: red!important;
+    width: 70px;
+    height: 70px;
+}
+
+
+.demoPage img {
+    justify-content: space-between;
+}
+
+.flip-book {
+    background-image: url(../../../public/images/backgroundwhite.jpg);
+    background-size: cover;
+    min-width: 315px;
+    min-height: 400px;
+    width: 100%;
+    max-width: 2000px;
+    display: block;
+}
+
+.demoPage {
+    min-width: 315px;
+    min-height: 400px;
+    width: 100%;
+    max-width: 2000px;
+    display: block;
+}
+
+.stf__item {
+    /* display: none; */
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+.page {
+    padding: 20px;
+    background-color: #fdfaf7;
+    color: #785e3a;
+    border: 1px solid #c2b5a3;
+    overflow: hidden;
+
+}
+
+.stf__item {
+    /* display: none; */
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+
+.stf__block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    perspective: 2000px;
+}
+
+.page.page-cover {
+    background-color: lightgrey;
+    color: #785e3a;
+    border: 1px solid #998466;
+}
+
+.page.page-cover.page-cover-top {
+    box-shadow: inset 0 0 30px 0 rgb(36 10 3 / 50%), -2px 0 5px 2px rgb(0 0 0 / 40%);
+}
+
+.page page-cover page-cover-top stf__item --hard --right{
+    
+}
+
+.page-cover {
+    position: absolute;
+    display: block;
+    height: 619.718px;
+    left: 465px;
+    top: 0.140909px;
+    width: 465px;
+    z-index: 1;
+}
+
+
+.page.page-cover.page-cover-top {
+    display: none;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    width: 465px;
+    height: 619.718px;
+    backface-visibility: hidden;
+    transform-origin: 0px 0px;
+    clip-path: none;
+    box-shadow: inset 0 0 30px 0 rgb(36 10 3 / 50%), -2px 0 5px 2px rgb(0 0 0 / 40%);
+}
+
+.demo-block {
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.pb-3,
+.py-3 {
+    padding-bottom: 1rem !important;
+}
+
+.pt-3,
+.py-3 {
+    padding-top: 1rem !important;
+}
+
+.overflow-hidden {
+    overflow: hidden !important;
+}
