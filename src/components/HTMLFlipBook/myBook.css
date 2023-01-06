@@ -9,11 +9,15 @@
     box-sizing: border-box;
 }
 
-/* .main {
-    margin-left: 180px;
-} */
+.main {
+    /* height: 100vh; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 10px; */
+}
 
-.demoPage{
+.pageDiv{
 position: relative;
 }
 
@@ -26,27 +30,61 @@ position: relative;
 
 
 .demoPage img {
-    justify-content: space-between;
+    justify-content: center;
+    min-width: 300px;
+    min-height: 460px;
+    /* width: 300px; */
+    /* border-radius: 10px; */
+    max-width: 500px;
+    max-height: 600px;
 }
 
-.flip-book {
-    background-image: url(../../../public/images/backgroundwhite.jpg);
+ .flip-book {
+    background-image: url(../../../public/images/zyro-image.jpg);
     background-size: cover;
     min-width: 315px;
     min-height: 400px;
-    width: 100%;
+    /* width: 500px;
+    height: 700px; */
     max-width: 2000px;
     display: block;
+} 
+
+.flip-book img{
+    width: 470px;
+    height: 900px;
+    padding-right: 10px;
+    border-radius: 10px;
+    min-width: 315px;
+    min-height: 400px;
+}
+
+
+.stf__parent{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    transform: translateZ(0);
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
 }
 
 .demoPage {
     min-width: 315px;
-    min-height: 400px;
+    min-height: 500px;
     width: 100%;
+    /* height: fit-content; */
     max-width: 2000px;
     display: block;
 }
 
+.container-md {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .stf__item {
     /* display: none; */
     position: absolute;
@@ -83,12 +121,22 @@ position: relative;
     border: 1px solid #998466;
 }
 
+.stf__wrapper {
+    margin-left: -7px;
+}
+
 .page.page-cover.page-cover-top {
     box-shadow: inset 0 0 30px 0 rgb(36 10 3 / 50%), -2px 0 5px 2px rgb(0 0 0 / 40%);
 }
 
-.page page-cover page-cover-top stf__item --hard --right{
-    
+.page .page-cover .page-cover-top .stf__item--hard--right{
+    position: absolute;
+    display: block;
+    height: 485px;
+    left: 0.042292px;
+    top: 0px;
+    width: 363.915px;
+    z-index: 1;
 }
 
 .page-cover {
